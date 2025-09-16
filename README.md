@@ -1,22 +1,23 @@
-# LocalCP4PINN
+# LocalCP4PINN (Unpublished)
 
 ## Abstract
-**LocalCP4PINN** is a framework for **local conformal prediction**, a distribution-free conformal calibration method designed to quantify local uncertainty in physics-informed neural networks (PINNs) when solving the forward problem.
+**LocalCP4PINN** is a framework for **local conformal prediction (Local CP)**, a distribution-free calibration method for quantifying *spatially adaptive uncertainty* in physics-informed neural networks (PINNs) when solving forward problems.
 
 <img width="983" height="654" alt="image" src="https://github.com/user-attachments/assets/47b5acf9-ef7c-45fe-b3b6-ffe0da69629a" />
 
-### UQ on 2D Allen-Cahn Example
-Geometric-distance PINN uncertainty calibration for the 2D Allen–Cahn equation under different heteroskedastic noise patterns. The irregular noisy regions are distinguished with dashed lines.
-- **Row:** Different noise patterns. 
-- **Column:** The true absolute-error distributions and the interval widths for the baseline model, CP, and local CP at $\alpha=0.05$, respectively, from the first column to the fourth column. 
+## Example: 2D Allen–Cahn Equation
+The figure below demonstrates **geometric-distance-based uncertainty calibration** for the 2D Allen–Cahn equation under different heteroskedastic noise patterns.  
+Dashed lines highlight irregular, noisy regions.  
+
+- **Rows:** Different noise patterns  
+- **Columns:** (1) True absolute error, (2) baseline PINN interval width, (3) CP interval width, and (4) Local CP interval width at significance level $\alpha = 0.05$  
 
 <img width="1803" height="1229" alt="image" src="https://github.com/user-attachments/assets/3de9e23a-0f83-49f7-aa1b-32ba501a7f03" />
 
+## Repository Structure & Usage
+Each Jupyter notebook corresponds to a numerical experiment reported in the paper.  
+We recommend starting with the **1D Poisson equation** example to become familiar with the repository structure and workflow.  
 
-## Reading Guide
-Each Jupyter notebook in this repository corresponds to a numerical experiment presented in the paper.
-You can start with the simplest 1D Poisson example to get yourself familiar with the structure of this repository.
-
-***NOTE:***
-- The local CP examples are not yet updated in the article. For more information, please refer to the updated article.
-- Use Python 3.10.17.
+### Notes
+- Local CP examples are still being integrated into the manuscript. For detailed results and presentations, please refer to the upcoming article update.  
+- Recommended environment: **Python 3.10.17**  
