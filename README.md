@@ -3,8 +3,6 @@
 ## Abstract
 **LocalCP4PINN** is a framework for **local conformal prediction (Local CP)**, a distribution-free calibration method for quantifying *spatially adaptive uncertainty* in physics-informed neural networks (PINNs) when solving forward problems.
 
-<img width="983" height="654" alt="image" src="https://github.com/user-attachments/assets/47b5acf9-ef7c-45fe-b3b6-ffe0da69629a" />
-
 ## Example: 2D Allen–Cahn Equation
 The figure below demonstrates **geometric-distance-based uncertainty calibration** for the 2D Allen–Cahn equation under different heteroskedastic noise patterns.  
 Dashed lines highlight irregular, noisy regions.  
