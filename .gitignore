@@ -10,6 +10,9 @@ dist/
 .venv/
 venv/
 .env
+*.pdf
+*.tex
+*.png
 
 # Jupyter
 .ipynb_checkpoints/
@@ -28,3 +31,5 @@ venv/
 figs/
 logs/
 data/
+
+
